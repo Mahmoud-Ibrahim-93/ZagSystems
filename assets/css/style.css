@@ -1,0 +1,121 @@
+/*
+* Style
+*/
+
+/*
+* Google font
+*/
+
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,600,700|Roboto");
+
+
+/*
+* Section - Home
+*/
+
+
+/** BG Parallax */
+#home-bg-parallax > .bg-parallax {
+    background: url("../images/bg-parallax2.jpg");
+}
+
+/** BG Video */
+#home-bg-video .player:before {
+    z-index: 15;
+}
+#home-bg-video .player.is-mobile {
+    display: none;
+}
+#home-bg-video .container {
+    position: relative;
+    z-index: 20;
+}
+
+
+
+
+
+/*
+* Section - Contact
+*/
+
+#contact {
+    /*background-image: url("../images/bg-contact.jpg");*/
+}
+.contact-card {
+    opacity: 0.98;
+    min-height: 140px;
+}
+.contact-card img {
+    left: 0;
+    max-height: 100%;
+    position: absolute;
+    top: 0;
+    z-index: 15;
+}
+.contact-card-block {
+    left: 0;
+    padding: 0 30px 0 175px;
+    position: absolute;
+    top: 0;
+    z-index: 20;
+}
+
+#youtube a{
+    color:#333;
+}
+
+
+/*
+* Footer
+*/
+
+.footer-logo {
+    max-height: 40px;
+}
+.footer-icon-social {
+    bottom: 10px;
+    position: relative;
+}
+
+/*
+ * Social
+ */
+
+#social .fa{
+    font-size: 3em;
+    width: 1.6em;
+    text-align: center;
+    line-height: 1.6em;
+    color: #fff;
+    border-radius: 0.8em; /* or 50% width & line-height */
+}
+
+.logo-small{
+    display:none;
+   }
+
+@media (max-width: 1199px) and (min-width: 991px){
+   .logo-small{
+    display:block;
+   }
+   .logo-large{
+    display:none;
+   }
+}
+
+@media (max-width: 450px){
+   .logo-small{
+    display:block;
+   }
+   .logo-large{
+    display:none;
+   }
+}
+
+
+@media (max-width: 500px) {
+    #social .fa{
+        font-size:1em;
+    }
+}
